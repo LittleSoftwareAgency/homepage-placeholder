@@ -1,0 +1,129 @@
+:root {
+  --sort-of-red: #db0018;
+  --sort-of-white: #f7f7f7;
+}
+
+@font-face {
+  font-family: 'nasalization';
+  src: url('./assets/nasalization-rg.eot');
+  src:
+    url('./assets/nasalization-rg.woff2') format('woff2'),
+    url('./assets/nasalization-rg.eot?#iefix') format('embedded-opentype'),
+    url('./assets/nasalization-rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+  margin: 0;
+  font-family: 'nasalization', sans-serif;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  font-family: 'nasalization', sans-serif;
+  font-size: 196px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+
+  -webkit-animation: logoApparition 2s linear;
+  -moz-animation: logoApparition 2s linear;
+  -o-animation: logoApparition 2s linear;
+  animation: logoApparition 2s linear;
+}
+
+@-webkit-keyframes logoApparition {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes logoApparition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes logoApparition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes logoApparition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: white;
+  }
+
+  #logo {
+    color: var(--sort-of-red);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: var(--sort-of-red);
+  }
+
+  #logo {
+    color: var(--sort-of-white);
+  }
+}
