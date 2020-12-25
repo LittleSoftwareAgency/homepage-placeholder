@@ -1,23 +1,13 @@
 :root {
-  --sort-of-red: #db0018;
-  --sort-of-white: #f7f7f7;
+  --sort-of-beige: #faf1e0;
+  --sort-of-black: #070707;
 }
-
-@font-face {
-  font-family: 'nasalization';
-  src: url('./assets/nasalization-rg.eot');
-  src:
-    url('./assets/nasalization-rg.woff2') format('woff2'),
-    url('./assets/nasalization-rg.eot?#iefix') format('embedded-opentype'),
-    url('./assets/nasalization-rg.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 html, body {
   margin: 0;
-  font-family: 'nasalization', sans-serif;
+  background-color: var(--sort-of-beige);
+  color: var(--sort-of-black);
+  font-family: 'Montserrat', sans-serif;
 }
 
 #content {
@@ -29,7 +19,7 @@ html, body {
 }
 
 #logo {
-  font-family: 'nasalization', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 196px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -105,25 +95,5 @@ html, body {
   100% {
     display: block;
     opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html, body {
-    background-color: white;
-  }
-
-  #logo {
-    color: var(--sort-of-red);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background-color: var(--sort-of-red);
-  }
-
-  #logo {
-    color: var(--sort-of-white);
   }
 }
